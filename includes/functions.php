@@ -1,4 +1,5 @@
 <?php
+
 function is_executive()
 {
 if($_SESSION)

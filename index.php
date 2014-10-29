@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require 'config.php';
+//require 'config.php';
 if(!$_SESSION)
 {
 require 'views/signin.php';
@@ -20,11 +20,18 @@ if($_SESSION)
 
 <?php
 }
-require 'includes/functions.php';
 
-if(is_executive())
-{
-	require 'views/post.php';
+
+if($_SESSION)
+
+{	
+	print_r($_SESSION);
+	require 'includes/functions.php';
+	if(is_executive())
+	{ 
+	echo '<a href="views/post.php">POST</a>';
+	}
 }
+
 
 ?>
