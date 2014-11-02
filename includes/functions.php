@@ -10,4 +10,15 @@ if($_SESSION)
     else false;
 	}
 }
+
+
+function inarray($val,$array){
+   foreach ($array as $value) {
+   	
+         if($val==$value){
+         	echo "checked";}
+	
+       
+   }
+}
 ?>
