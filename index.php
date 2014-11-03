@@ -11,9 +11,11 @@ if($_SESSION)
 {	
 //	print_r($_SESSION);
 	require 'includes/functions.php';
+	echo '<a href="views/profile.php">Profile</a></br>';
+	echo '<a href="notifications.php">Notifications</a></br>';
 	if(is_executive())
 	{ 
-	echo '<a href="views/post.php">POST</a>';
+	echo '<a href="views/post.php">POST</a></br>';
 	}
 }
 
